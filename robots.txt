@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
 
-Sitemap: https://YOUR_USERNAME.github.io/Richard-Website/sitemap.xml
+Sitemap: https://tshiamo98.github.io/Richard-Website/sitemap.xml
 
