@@ -1,67 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Electrical Engineering Consulting</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>About Us | Electrical Engineering Consulting | South Africa</title>
+    <meta name="description" content="Learn about Electrical Engineering Consulting. Independent engineering consulting focused on building services and PV solar systems. Serving South Africa with professional electrical design.">
+    <meta name="keywords" content="about electrical engineering consulting, electrical engineering company, building services engineering, PV solar engineers, South Africa, electrical design consultants, engineering consulting firm">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tshiamo98.github.io/Richard-Website/about.html">
+    <meta property="og:title" content="About Us | Electrical Engineering Consulting | South Africa">
+    <meta property="og:description" content="Independent electrical engineering consulting firm specializing in building services and PV solar systems across South Africa.">
+    <meta property="og:image" content="https://tshiamo98.github.io/Richard-Website/assets/og-image-about.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tshiamo98.github.io/Richard-Website/about.html">
+    <meta property="twitter:title" content="About Us | Electrical Engineering Consulting | South Africa">
+    <meta property="twitter:description" content="Independent electrical engineering consulting firm specializing in building services and PV solar systems across South Africa.">
+    <meta property="twitter:image" content="https://tshiamo98.github.io/Richard-Website/assets/og-image-about.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tshiamo98.github.io/Richard-Website/about.html">
+    
+    <!-- Author and Copyright -->
+    <meta name="author" content="Electrical Engineering Consulting">
+    <meta name="copyright" content="Electrical Engineering Consulting">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Geo Tags for Local SEO -->
+    <meta name="geo.region" content="ZA">
+    <meta name="geo.placename" content="South Africa">
+    <meta name="geo.position" content="-30.5595;22.9375">
+    <meta name="ICBM" content="-30.5595, 22.9375">
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Electrical Engineering Consulting",
+        "description": "Independent electrical engineering consulting services for building services and PV solar systems in South Africa",
+        "url": "https://tshiamo98.github.io/Richard-Website/about.html",
+        "logo": "https://tshiamo98.github.io/Richard-Website/assets/logo.png",
+        "founder": {
+            "@type": "Person",
+            "name": "Richard Consulting Engineers"
+        },
+        "foundingDate": "2015",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ZA",
+            "addressRegion": "South Africa"
+        },
+        "areaServed": "South Africa",
+        "serviceType": [
+            "Electrical Engineering Consulting",
+            "Building Services Design",
+            "PV Solar System Engineering",
+            "Lighting Design",
+            "Backup Power Solutions"
+        ],
+        "knowsAbout": [
+            "SANS Electrical Standards",
+            "Municipal Electrical Regulations",
+            "PV Solar System Design",
+            "Building Services Engineering",
+            "Electrical Safety Compliance"
+        ],
+        "openingHours": "Mo-Fr 08:00-17:00",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+27123456789",
+            "contactType": "customer service",
+            "email": "contact@example.com",
+            "availableLanguage": "English"
+        }
+    }
+    </script>
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <title>Richard Consulting Engineers, Professional Engineering Services</title>
-    <meta name="description" content="Richard Consulting Engineers provides professional engineering, consulting, and project management services. Trusted expertise for modern infrastructure and development.">
-    <meta name="keywords" content="engineering consulting, professional engineers, infrastructure engineering, project management">
-    <meta name="author" content="Richard Consulting Engineers">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     <!-- Navigation - consistent across all pages -->
-    <header class="header">
+    <header class="header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
         <div class="container">
-            <nav class="nav">
-                <a href="index.html" class="nav-logo">
-                    <span class="logo-text">Electrical Engineering</span>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <a href="index.html" class="nav-logo" itemprop="url">
+                    <span class="logo-text" itemprop="name">Electrical Engineering</span>
                     <span class="logo-subtext">Consulting</span>
                 </a>
                 
-                <button class="nav-toggle" aria-label="Toggle navigation">
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                     <i class="fas fa-bars"></i>
                 </button>
-                
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-                    <!-- Add this new line -->
-                    <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+
+                <ul class="nav-menu" role="menubar">
+                    <li class="nav-item" role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+                    <li class="nav-item" role="none"><a href="services.html" class="nav-link" role="menuitem">Services</a></li>
+                    <li class="nav-item" role="none"><a href="projects.html" class="nav-link" role="menuitem">Projects</a></li>
+                    <li class="nav-item" role="none"><a href="testimonials.html" class="nav-link" role="menuitem">Testimonials</a></li>
+                    <li class="nav-item" role="none"><a href="about.html" class="nav-link active" role="menuitem" aria-current="page">About</a></li>
+                    <li class="nav-item" role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main role="main">
         <!-- Page header -->
-        <section class="page-header">
+        <section class="page-header" role="region" aria-label="About us introduction">
             <div class="container">
-                <h1 class="page-title">About Us</h1>
-                <p class="page-subtitle">
-                    Professional electrical engineering consulting focused on building services and PV solar systems.
+                <h1 class="page-title" itemprop="headline">About Electrical Engineering Consulting</h1>
+                <p class="page-subtitle" itemprop="description">
+                    Professional electrical engineering consulting focused on building services and PV solar systems across South Africa.
                 </p>
             </div>
         </section>
 
         <!-- About content - professional context and approach -->
-        <section class="section">
+        <section class="section" role="region" aria-labelledby="about-content-title">
             <div class="container">
-                <div class="about-content">
+                <h2 id="about-content-title" class="sr-only">Our Company Information</h2>
+                
+                <div class="about-content" itemscope itemtype="https://schema.org/AboutPage">
                     <div class="about-text">
-                        <h2>Our Focus</h2>
-                        <p>
+                        <h2 itemprop="name">Our Focus</h2>
+                        <p itemprop="description">
                             We provide independent electrical engineering consulting services for building services and photovoltaic solar systems. 
                             Our practice focuses on the technical design and analysis required for safe, compliant, and practical electrical installations.
                         </p>
@@ -76,26 +162,26 @@
                             Our approach is based on engineering principles rather than standard specifications, resulting in solutions tailored to each project.
                         </p>
                         
-                        <div class="approach-points">
-                            <div class="approach-point">
-                                <h3><i class="fas fa-check-circle"></i> Compliance</h3>
-                                <p>
+                        <div class="approach-points" role="list">
+                            <div class="approach-point" role="listitem" itemscope itemtype="https://schema.org/Service">
+                                <h3><i class="fas fa-check-circle" aria-hidden="true"></i> <span itemprop="name">Compliance</span></h3>
+                                <p itemprop="description">
                                     Designs comply with SANS standards, municipal regulations, and utility requirements. 
                                     We stay current with regulatory changes and industry best practices.
                                 </p>
                             </div>
                             
-                            <div class="approach-point">
-                                <h3><i class="fas fa-check-circle"></i> Coordination</h3>
-                                <p>
+                            <div class="approach-point" role="listitem" itemscope itemtype="https://schema.org/Service">
+                                <h3><i class="fas fa-check-circle" aria-hidden="true"></i> <span itemprop="name">Coordination</span></h3>
+                                <p itemprop="description">
                                     Electrical systems must coordinate with architectural, structural, and mechanical elements. 
                                     We work collaboratively with other consultants to integrate electrical design effectively.
                                 </p>
                             </div>
                             
-                            <div class="approach-point">
-                                <h3><i class="fas fa-check-circle"></i> Practicality</h3>
-                                <p>
+                            <div class="approach-point" role="listitem" itemscope itemtype="https://schema.org/Service">
+                                <h3><i class="fas fa-check-circle" aria-hidden="true"></i> <span itemprop="name">Practicality</span></h3>
+                                <p itemprop="description">
                                     Engineering solutions must be installable, maintainable, and operable. 
                                     We consider construction methods, material availability, and long-term operation in our designs.
                                 </p>
@@ -104,10 +190,10 @@
                     </div>
                     
                     <div class="about-sidebar">
-                        <div class="sidebar-card">
-                            <h3><i class="fas fa-bullseye"></i> Our Principles</h3>
-                            <ul>
-                                <li>Engineering-led design decisions</li>
+                        <div class="sidebar-card" itemscope itemtype="https://schema.org/Service">
+                            <h3><i class="fas fa-bullseye" aria-hidden="true"></i> <span itemprop="name">Our Principles</span></h3>
+                            <ul role="list">
+                                <li itemprop="description">Engineering-led design decisions</li>
                                 <li>Independent technical advice</li>
                                 <li>Clear communication with clients</li>
                                 <li>Focus on safety and reliability</li>
@@ -115,10 +201,10 @@
                             </ul>
                         </div>
                         
-                        <div class="sidebar-card">
-                            <h3><i class="fas fa-cogs"></i> Technical Scope</h3>
-                            <ul>
-                                <li>Building services electrical design</li>
+                        <div class="sidebar-card" itemscope itemtype="https://schema.org/Service">
+                            <h3><i class="fas fa-cogs" aria-hidden="true"></i> <span itemprop="name">Technical Scope</span></h3>
+                            <ul role="list">
+                                <li itemprop="description">Building services electrical design</li>
                                 <li>PV solar system engineering</li>
                                 <li>Backup power system design</li>
                                 <li>Lighting design and analysis</li>
@@ -126,10 +212,10 @@
                             </ul>
                         </div>
                         
-                        <div class="sidebar-card">
-                            <h3><i class="fas fa-handshake"></i> Client Sectors</h3>
-                            <ul>
-                                <li>Commercial developers</li>
+                        <div class="sidebar-card" itemscope itemtype="https://schema.org/Service">
+                            <h3><i class="fas fa-handshake" aria-hidden="true"></i> <span itemprop="name">Client Sectors</span></h3>
+                            <ul role="list">
+                                <li itemprop="description">Commercial developers</li>
                                 <li>Architectural practices</li>
                                 <li>Educational institutions</li>
                                 <li>Industrial facilities</li>
@@ -140,61 +226,98 @@
                 </div>
                 
                 <!-- Contact prompt -->
-                <div class="contact-prompt">
-                    <h3>Need electrical engineering consulting?</h3>
-                    <p>Contact us to discuss how we can assist with your project requirements.</p>
-                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                <div class="contact-prompt" role="region" aria-label="Contact for consulting services">
+                    <h3>Need professional electrical engineering consulting?</h3>
+                    <p>Contact us to discuss how we can assist with your project requirements and provide engineering solutions.</p>
+                    <a href="contact.html" class="btn btn-primary" aria-label="Contact Electrical Engineering Consulting">Contact Us</a>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer - consistent across all pages -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>Electrical Engineering Consulting</h3>
-                    <p>Professional electrical engineering services for building services and PV solar systems.</p>
+                    <h3 itemprop="name">Electrical Engineering Consulting</h3>
+                    <p itemprop="description">Professional electrical engineering services for building services and PV solar systems in South Africa.</p>
                 </div>
                 
                 <div class="footer-links">
                     <h4>Pages</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                    <ul role="list">
+                        <li><a href="index.html" itemprop="url">Home</a></li>
+                        <li><a href="services.html" itemprop="url">Services</a></li>
+                        <li><a href="projects.html" itemprop="url">Projects</a></li>
+                        <li><a href="testimonials.html" itemprop="url">Testimonials</a></li>
+                        <li><a href="about.html" itemprop="url">About</a></li>
+                        <li><a href="contact.html" itemprop="url">Contact</a></li>
                     </ul>
                 </div>
                 
-                <div class="footer-contact">
+                <div class="footer-contact" itemscope itemtype="https://schema.org/LocalBusiness">
                     <h4>Contact</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> contact@example.com</li>
-                        <li><i class="fas fa-phone"></i> +27 12 345 6789</li>
-                        <li><i class="fas fa-map-marker-alt"></i> South Africa</li>
+                    <ul role="list">
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:contact@example.com" itemprop="email">contact@example.com</a></li>
+                        <li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+27123456789" itemprop="telephone">+27 12 345 6789</a></li>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span itemprop="addressCountry">South Africa</span></span></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> Electrical Engineering Consulting. All rights reserved.</p>
+                <p>&copy; <span id="currentYear"></span> <span itemprop="name">Electrical Engineering Consulting</span>. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-        <!-- WhatsApp floating button -->
-    <a href="https://wa.me/27836866258?text=Hello%20Electrical%20Engineering%20Consulting,%20I%20would%20like%20to%20discuss%20a%20project" 
+    <!-- WhatsApp floating button -->
+    <a href="https://wa.me/27836866258?text=Hello%20Electrical%20Engineering%20Consulting,%20I%20would%20like%20to%20learn%20more%20about%20your%20services" 
        class="whatsapp-float" 
        target="_blank" 
-       rel="noopener noreferrer"
-       aria-label="Contact us on WhatsApp">
+       rel="noopener noreferrer nofollow"
+       aria-label="Contact Electrical Engineering Consulting on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Screen reader only class -->
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
 
     <script src="script.js"></script>
+    
+    <!-- Schema.org BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://tshiamo98.github.io/Richard-Website/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About Us",
+                "item": "https://tshiamo98.github.io/Richard-Website/about.html"
+            }
+        ]
+    }
+    </script>
 </body>
 </html>
