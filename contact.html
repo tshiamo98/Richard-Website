@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Electrical Engineering Consulting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation - consistent across all pages -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-logo">
+                    <span class="logo-text">Electrical Engineering</span>
+                    <span class="logo-subtext">Consulting</span>
+                </a>
+                
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                    <!-- Add this new line -->
+                    <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">
+                    Contact us to discuss your electrical engineering requirements. We provide consulting services for building services and PV solar systems.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact content - form and contact details -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-container">
+                    <!-- Contact form -->
+                    <div class="contact-form-container">
+                        <h2>Send a Message</h2>
+                        <p>Please provide details about your project or inquiry.</p>
+                        
+                        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xbjnekaz" method="POST">
+                            <!-- Formspree action URL is a placeholder - replace with actual Formspree endpoint -->
+                            
+                            <div class="form-group">
+                                <label for="name">Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject <span class="required">*</span></label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                            </div>
+                            
+                            <div class="form-note">
+                                <p><i class="fas fa-info-circle"></i> We typically respond within 1-2 business days.</p>
+                            </div>
+                        </form>
+                        
+                        <div id="formMessage" class="form-message" style="display: none;">
+                            <!-- Success/error message will appear here -->
+                        </div>
+                    </div>
+                    
+                    <!-- Contact details -->
+                    <div class="contact-details">
+                        <h2>Contact Details</h2>
+                        <p>For general inquiries or to discuss project requirements:</p>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Email</h3>
+                                    <p>contact@example.com</p>
+                                    <p class="contact-note">For project inquiries and consultations</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Phone</h3>
+                                    <p>+27 12 345 6789</p>
+                                    <p class="contact-note">Available during business hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Location</h3>
+                                    <p>South Africa</p>
+                                    <p class="contact-note">Serving clients nationally</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-guidance">
+                            <h3>What to Include in Your Inquiry</h3>
+                            <p>To help us respond effectively, please include:</p>
+                            <ul>
+                                <li>Project type and location</li>
+                                <li>Current project stage</li>
+                                <li>Specific electrical requirements</li>
+                                <li>Any relevant drawings or documents</li>
+                                <li>Your preferred timeline</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-areas">
+                            <h3>Service Areas</h3>
+                            <div class="areas-tags">
+                                <span class="area-tag">Building Services</span>
+                                <span class="area-tag">PV Solar Design</span>
+                                <span class="area-tag">Lighting Design</span>
+                                <span class="area-tag">Backup Power</span>
+                                <span class="area-tag">Electrical Compliance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer - consistent across all pages -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Electrical Engineering Consulting</h3>
+                    <p>Professional electrical engineering services for building services and PV solar systems.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@example.com</li>
+                        <li><i class="fas fa-phone"></i> +27 12 345 6789</li>
+                        <li><i class="fas fa-map-marker-alt"></i> South Africa</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Electrical Engineering Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Additional script for contact form handling -->
+    <script>
+        // Contact form submission handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const formMessage = document.getElementById('formMessage');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Simple form validation
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const subject = document.getElementById('subject').value.trim();
+                    const message = document.getElementById('message').value.trim();
+                    
+                    if (!name || !email || !subject || !message) {
+                        showFormMessage('Please fill in all required fields.', 'error');
+                        return;
+                    }
+                    
+                    // Email validation
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(email)) {
+                        showFormMessage('Please enter a valid email address.', 'error');
+                        return;
+                    }
+                    
+                    // In a real implementation, this would submit to Formspree
+                    // For demo purposes, we'll show a success message
+                    showFormMessage('Thank you for your message. We will respond within 1-2 business days.', 'success');
+                    
+                    // Reset form
+                    contactForm.reset();
+                });
+            }
+            
+            function showFormMessage(text, type) {
+                formMessage.textContent = text;
+                formMessage.className = 'form-message ' + type;
+                formMessage.style.display = 'block';
+                
+                // Hide message after 5 seconds
+                setTimeout(function() {
+                    formMessage.style.display = 'none';
+                }, 5000);
+            }
+        });
+
+
+            <!-- WhatsApp floating button -->
+    <a href="https://wa.me/27836866258?text=Hello%20Electrical%20Engineering%20Consulting,%20I%20would%20like%20to%20discuss%20a%20project" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Electrical Engineering Consulting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation - consistent across all pages -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-logo">
+                    <span class="logo-text">Electrical Engineering</span>
+                    <span class="logo-subtext">Consulting</span>
+                </a>
+                
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                    <!-- Add this new line -->
+                    <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Client Testimonials</h1>
+                <p class="page-subtitle">
+                    Feedback from clients and partners on our electrical engineering consulting services.
+                </p>
+                <p class="page-note">
+                    <i class="fas fa-info-circle"></i>
+                    All testimonials are verified and approved before publication.
+                </p>
+            </div>
+        </section>
+
+        <!-- Testimonials section -->
+        <section class="section">
+            <div class="container">
+                <!-- Testimonials grid -->
+                <div class="testimonials-grid" id="testimonialsContainer">
+                    <!-- Testimonials will be loaded dynamically from JavaScript -->
+                    <!-- Loading indicator -->
+                    <div class="loading-testimonials">
+                        <i class="fas fa-spinner fa-spin"></i> Loading testimonials...
+                    </div>
+                </div>
+
+                <!-- Submit testimonial section -->
+                <div class="submit-testimonial">
+                    <div class="submit-testimonial-header">
+                        <h2>Share Your Experience</h2>
+                        <p>Have you worked with us? We'd appreciate your feedback.</p>
+                    </div>
+                    
+                    <!-- Information note -->
+                    <div class="form-note testimonial-note">
+                        <p><i class="fas fa-shield-alt"></i> <strong>Privacy & Approval Process:</strong></p>
+                        <p>All testimonials are reviewed before publication. Your contact information will not be published. We respect your privacy and only use testimonials with explicit consent.</p>
+                    </div>
+                    
+                    <!-- Testimonial submission form -->
+                    <form id="testimonialForm" class="testimonial-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="testimonialName">Your Name <span class="required">*</span></label>
+                                <input type="text" id="testimonialName" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="testimonialEmail">Your Email <span class="required">*</span></label>
+                                <input type="email" id="testimonialEmail" name="email" required>
+                                <small class="form-hint">We'll only use this to verify your testimonial</small>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="testimonialCompany">Company / Project Type</label>
+                                <input type="text" id="testimonialCompany" name="company" placeholder="e.g., ABC Developers, School Project, etc.">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Your Rating <span class="required">*</span></label>
+                                <div class="rating-input">
+                                    <div class="rating-stars">
+                                        <input type="radio" id="star5" name="rating" value="5" required>
+                                        <label for="star5" title="5 stars"><i class="fas fa-star"></i></label>
+                                        
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <label for="star4" title="4 stars"><i class="fas fa-star"></i></label>
+                                        
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <label for="star3" title="3 stars"><i class="fas fa-star"></i></label>
+                                        
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <label for="star2" title="2 stars"><i class="fas fa-star"></i></label>
+                                        
+                                        <input type="radio" id="star1" name="rating" value="1">
+                                        <label for="star1" title="1 star"><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <small class="form-hint">Select from 1 (poor) to 5 (excellent)</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="testimonialMessage">Your Testimonial <span class="required">*</span></label>
+                            <textarea id="testimonialMessage" name="message" rows="5" required 
+                                      placeholder="Please share your experience working with us..."></textarea>
+                            <small class="form-hint">Maximum 500 characters</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" id="testimonialConsent" name="consent" required>
+                                <label for="testimonialConsent">
+                                    I consent to have this testimonial published on the website (name and company/project only).
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fas fa-paper-plane"></i> Submit Testimonial
+                            </button>
+                        </div>
+                        
+                        <div class="form-note">
+                            <p><i class="fas fa-clock"></i> Testimonials are typically reviewed within 2-3 business days.</p>
+                        </div>
+                    </form>
+                    
+                    <!-- Form submission message -->
+                    <div id="testimonialMessage" class="form-message" style="display: none;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer - consistent across all pages -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Electrical Engineering Consulting</h3>
+                    <p>Professional electrical engineering services for building services and PV solar systems.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@example.com</li>
+                        <li><i class="fas fa-phone"></i> +27 12 345 6789</li>
+                        <li><i class="fas fa-map-marker-alt"></i> South Africa</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Electrical Engineering Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp floating button (added to all pages) -->
+    <a href="https://wa.me/27123456789?text=Hello%20Electrical%20Engineering%20Consulting,%20I%20would%20like%20to%20discuss%20a%20project" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Testimonial data and JavaScript -->
+    <script>
+        // Testimonial data structure
+        // In a real implementation, this would come from a backend API
+        // For now, we use a local array that can be easily migrated to a backend later
+        const testimonialsData = [
+            {
+                id: 1,
+                name: "James Wilson",
+                company: "Commercial Developer",
+                rating: 5,
+                testimonial: "Professional electrical engineering advice that helped us avoid costly mistakes in our office building project. The attention to compliance and practical solutions was exceptional.",
+                date: "2023-10-15",
+                approved: true
+            },
+            {
+                id: 2,
+                name: "Sarah Chen",
+                company: "School Board Director",
+                rating: 5,
+                testimonial: "The electrical masterplanning for our campus expansion was thorough and future-proof. Their understanding of educational facility requirements was impressive.",
+                date: "2023-09-22",
+                approved: true
+            },
+            {
+                id: 3,
+                name: "Robert van der Merwe",
+                company: "Industrial Plant Manager",
+                rating: 4,
+                testimonial: "Reliable backup power system design that has kept our operations running during outages. Practical approach to industrial electrical requirements.",
+                date: "2023-08-30",
+                approved: true
+            },
+            {
+                id: 4,
+                name: "Megan Williams",
+                company: "Architectural Firm",
+                rating: 5,
+                testimonial: "As architects, we appreciate electrical consultants who coordinate effectively with our designs. Their team integrated seamlessly with our project workflow.",
+                date: "2023-07-18",
+                approved: true
+            },
+            {
+                id: 5,
+                name: "David Brown",
+                company: "Farm Owner",
+                rating: 5,
+                testimonial: "The solar PV system design for our irrigation needs has significantly reduced our energy costs. The system has performed reliably for over a year.",
+                date: "2023-06-05",
+                approved: true
+            },
+            {
+                id: 6,
+                name: "Lisa Rodriguez",
+                company: "Hospital Administrator",
+                rating: 5,
+                testimonial: "Critical backup power design for our healthcare facility gave us confidence in patient safety during power outages. Exceeded regulatory requirements.",
+                date: "2023-05-12",
+                approved: true
+            }
+        ];
+
+        // Function to render testimonials
+        function renderTestimonials() {
+            const container = document.getElementById('testimonialsContainer');
+            
+            if (!container) return;
+            
+            // Clear loading indicator
+            container.innerHTML = '';
+            
+            // Filter only approved testimonials
+            const approvedTestimonials = testimonialsData.filter(t => t.approved);
+            
+            if (approvedTestimonials.length === 0) {
+                container.innerHTML = `
+                    <div class="no-testimonials">
+                        <p><i class="fas fa-comments"></i></p>
+                        <p>No testimonials available yet. Be the first to share your experience!</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            // Create testimonials grid
+            const grid = document.createElement('div');
+            grid.className = 'testimonials-grid';
+            
+            // Sort by date (newest first)
+            approvedTestimonials.sort((a, b) => new Date(b.date) - new Date(a.date));
+            
+            // Create each testimonial card
+            approvedTestimonials.forEach(testimonial => {
+                const card = document.createElement('article');
+                card.className = 'testimonial-card';
+                
+                // Generate star rating HTML
+                let starsHtml = '';
+                for (let i = 1; i <= 5; i++) {
+                    if (i <= testimonial.rating) {
+                        starsHtml += '<i class="fas fa-star"></i>';
+                    } else {
+                        starsHtml += '<i class="far fa-star"></i>';
+                    }
+                }
+                
+                // Format date
+                const dateObj = new Date(testimonial.date);
+                const formattedDate = dateObj.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+                
+                card.innerHTML = `
+                    <div class="testimonial-header">
+                        <div class="testimonial-rating">
+                            ${starsHtml}
+                        </div>
+                        <div class="testimonial-date">${formattedDate}</div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"${testimonial.testimonial}"</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-author">
+                            <strong>${testimonial.name}</strong>
+                            ${testimonial.company ? `<span class="testimonial-company">${testimonial.company}</span>` : ''}
+                        </div>
+                    </div>
+                `;
+                
+                grid.appendChild(card);
+            });
+            
+            container.appendChild(grid);
+        }
+
+        // Form submission handling
+        document.addEventListener('DOMContentLoaded', function() {
+            // Render testimonials on page load
+            renderTestimonials();
+            
+            // Handle testimonial form submission
+            const testimonialForm = document.getElementById('testimonialForm');
+            const messageDiv = document.getElementById('testimonialMessage');
+            
+            if (testimonialForm) {
+                testimonialForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Basic form validation
+                    const name = document.getElementById('testimonialName').value.trim();
+                    const email = document.getElementById('testimonialEmail').value.trim();
+                    const rating = document.querySelector('input[name="rating"]:checked');
+                    const message = document.getElementById('testimonialMessage').value.trim();
+                    const consent = document.getElementById('testimonialConsent').checked;
+                    
+                    // Validation checks
+                    if (!name || !email || !rating || !message || !consent) {
+                        showMessage('Please fill in all required fields.', 'error');
+                        return;
+                    }
+                    
+                    if (message.length > 500) {
+                        showMessage('Testimonial must be 500 characters or less.', 'error');
+                        return;
+                    }
+                    
+                    // Email validation
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(email)) {
+                        showMessage('Please enter a valid email address.', 'error');
+                        return;
+                    }
+                    
+                    // In a real implementation, this would submit to a backend
+                    // For demo purposes, we'll simulate submission
+                    
+                    // Create new testimonial object (not approved yet)
+                    const newTestimonial = {
+                        id: testimonialsData.length + 1,
+                        name: name,
+                        company: document.getElementById('testimonialCompany').value.trim(),
+                        rating: parseInt(rating.value),
+                        testimonial: message,
+                        date: new Date().toISOString().split('T')[0], // Today's date
+                        approved: false // Not approved until reviewed
+                    };
+                    
+                    // In a real app, you would send this to a backend
+                    // For now, we'll just show a success message
+                    
+                    showMessage('Thank you for your testimonial! It has been submitted for review and will be published if approved.', 'success');
+                    
+                    // Reset form
+                    testimonialForm.reset();
+                    
+                    // In a real implementation with a backend:
+                    // 1. Send data to server
+                    // 2. Server stores in database with approved=false
+                    // 3. Admin reviews and sets approved=true
+                    // 4. Frontend fetches approved testimonials from API
+                });
+            }
+            
+            // Helper function to show messages
+            function showMessage(text, type) {
+                if (!messageDiv) return;
+                
+                messageDiv.textContent = text;
+                messageDiv.className = 'form-message ' + type;
+                messageDiv.style.display = 'block';
+                
+                // Scroll to message
+                messageDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    messageDiv.style.display = 'none';
+                }, 5000);
+            }
+            
+            // Set current year in footer
+            const yearElements = document.querySelectorAll('#currentYear');
+            const currentYear = new Date().getFullYear();
+            yearElements.forEach(element => {
+                element.textContent = currentYear;
+            });
+            
+            // Initialize mobile navigation (reuse existing function)
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    
+                    // Change icon based on menu state
+                    const icon = this.querySelector('i');
+                    if (navMenu.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+                
+                // Close mobile menu when clicking on a link
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('active');
+                        
+                        // Reset icon to bars
+                        const icon = navToggle.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    });
+                });
+            }
+        });
+    </script>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
